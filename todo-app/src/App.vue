@@ -1,13 +1,14 @@
 <template>
-  <v-app>
-    
+  <v-app id="app">
+
     <Navbar/>
 
-
-    <v-content class="grey lighten-4">
+    <v-content class="mx-4 mt-4">
       <router-view>
       </router-view>
+
     </v-content>
+      
   </v-app>
 </template>
 
@@ -25,3 +26,10 @@ export default {
   }),
 };
 </script>
+
+<style>
+#app {
+  background-color: var(--v-background-base);
+}
+
+</style>
