@@ -1,21 +1,23 @@
 <template>
   <v-app>
     
-    <v-content>
+    <Navbar/>
+
+
+    <v-content class="grey lighten-4">
       <router-view>
-        <Buttons/>
       </router-view>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import Buttons from './components/Buttons'
+import Navbar from './components/Navbar'
 export default {
   name: 'App',
 
   components: {
-    Buttons
+    Navbar
   },
 
   data: () => ({
